@@ -1,0 +1,319 @@
+.main{
+    display: grid;
+    grid-template-areas:
+    'nav''nav''nav''nav'
+    'header''header''header''header'
+    'frame3''frame3''frame3''frame3'
+    'frame4''frame4''frame4''frame4'
+    'frame5''frame5''frame5''frame5'
+    'frame6''frame6''frame6''frame6'
+    'frame7''frame7''frame7''frame7'
+    'footer''footer''footer''footer';   
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+    background-image: radial-gradient(rgb(245, 49, 124),rgb(253, 253, 244));
+}
+
+/* NAVIGATION BAR*/
+
+#nav{
+    padding: 3px;
+    grid-area: nav;
+    vertical-align: text-top;
+    border: solid black 3px;
+    border-radius: 10px;
+    background-color: rgb(15, 10, 11);
+}
+#abc{
+    vertical-align: top;
+    font-size: large;
+}
+#def{
+    vertical-align:top; 
+    float:right;
+    border: black solid 2px;
+    padding: 2px;
+    width: 220px;
+    height: 20px;
+}
+
+/*HEADER*/
+
+#header{
+    border: 3px solid black;
+    border-radius: 10px;
+    grid-area: header;
+    height: 640px;
+    background-image: url(top.jpg);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+.head{
+    display: flex;
+    height: 640px;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+#item1{
+    font-style: bold;
+    font-size: 800%;
+    margin:80px;
+}
+
+/* first character */
+
+#frame3{
+    padding: 3px;
+    grid-area: frame3;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    height:300px;
+    
+}
+.desc1{
+    padding: 3px;
+}
+.pic1{
+    animation-name: pic1anim;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: relative;
+    height:300px;
+    width:500px;
+    background-repeat: no-repeat;
+    float: right;
+}
+@keyframes pic1anim{
+    0%{
+        left:100px;
+        background-image: url(doraemon1.png);
+    }
+    25%{
+        left: 100px;
+        background-image: url(doraemon2.jpg);
+    }
+    50%{
+        left: 100px;
+        background-image: url(doraemon3.jpg);
+    }
+    75%{
+        left: 100px;
+        background-image: url(doraemon4.jpg);
+    }
+    100%{
+        left: 100px;
+        background-image: url(doraemon5.png);
+    }
+}
+
+/* second character */
+
+#frame4{
+    padding: 3px;
+    grid-area: frame4;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    height:300px;
+}
+.desc2{
+    padding: 3px;
+}
+.pic2{
+    animation-name: pic2anim;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: relative;
+    height:300px;
+    width:500px;
+    background-repeat: no-repeat;
+    float: right;
+}
+@keyframes pic2anim{
+    0%{
+        left:100px;
+        top: 25px;
+        background-image: url(chotabheem1.jpg);
+    }
+    25%{
+        left: 100px;
+        top: 25px;
+        background-image: url(chotabheem2.jpg);
+    }
+    50%{
+        left: 100px;
+        top: 25px;
+        background-image: url(chotabheem3.jpg);
+    }
+    75%{
+        left: 100px;
+        top: 25px;
+        background-image: url(chotabheem4.jpg);
+    }
+    100%{
+        left: 100px;
+        top: 25px;
+        background-image: url(chotabheem5.jpg);
+    }
+}
+
+/* third character */
+
+#frame5{
+    padding: 3px;
+    grid-area: frame5;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    height:300px;
+}
+.desc3{
+    padding: 3px;
+}
+.pic3{
+    animation-name: pic3anim;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: relative;
+    height:300px;
+    width:500px;
+    background-repeat: no-repeat;
+    float: right;
+}
+@keyframes pic3anim{
+    0%{
+        left:100px;
+        top: 25px;
+        background-image: url(shinchan1.png);
+    }
+    25%{
+        left: 100px;
+        top: 25px;
+        background-image: url(shinchan5.jpg);
+    }
+    50%{
+        left: 100px;
+        top: 25px;
+        background-image: url(shinchan3.png);
+    }
+    75%{
+        left: 100px;
+        top: 25px;
+        background-image: url(shinchan4.jpg);
+    }
+    100%{
+        left: 100px;
+        top: 25px;
+        background-image: url(shinchan5.jpg);
+    }
+}
+/* fourth character */
+
+
+#frame6{
+    padding: 3px;
+    grid-area: frame6;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    height:300px;
+}
+.desc4{
+    padding: 3px;
+}
+.pic4{
+    animation-name: pic4anim;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: relative;
+    height:300px;
+    width:500px;
+    background-repeat: no-repeat;
+    float: right;
+}
+@keyframes pic4anim{
+    0%{
+        left:100px;
+        background-image: url(ben1.jpg);
+    }
+    25%{
+        left: 100px;
+        background-image: url(ben2.png);
+    }
+    50%{
+        left: 100px;
+        background-image: url(ben3.jpg);
+    }
+    75%{
+        left: 100px;
+        background-image: url(ben4.jpg);
+    }
+    100%{
+        left: 100px;
+        background-image: url(ben5.jpg);
+    }
+}
+
+/* fifth character */
+
+#frame7{
+    padding: 3px;
+    grid-area: frame7;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    height:300px;
+}
+.desc5{
+    padding: 3px;
+}
+.pic5{
+    animation-name: pic5anim;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: relative;
+    height:300px;
+    width:500px;
+    background-repeat: no-repeat;
+    float: right;
+}
+@keyframes pic5anim{
+    0%{
+        left:100px;
+        top: 35px;
+        background-image: url(tnj1.png);
+    }
+    25%{
+        left: 100px;
+        top: 35px;
+        background-image: url(tnj2.jpg);
+    }
+    50%{
+        left: 100px;
+        top: 35px;
+        background-image: url(tnj3.jpg);
+    }
+    75%{
+        left: 100px;
+        top: 35px;
+        background-image: url(tnj4.jpg);
+    }
+    100%{
+        left: 100px;
+        top: 35px;
+        background-image: url(tnj5.jpg);
+    }
+}
+
+
+/*footer*/
+
+
+#footer{
+    border: 3px solid black;
+    padding: 3px;
+    grid-area: footer;
+    text-align: center;
+    height: 30px;
+    background-color: rgb(3, 3, 3);
+    color: white;
+    border-radius: 10px;
+}
